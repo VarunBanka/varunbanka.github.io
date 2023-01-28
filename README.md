@@ -8,5 +8,5 @@ Tailwind CSS
 Bootstrap 
 
 ## Website link
-https://varunbanka.github.io/my-portfolio/
+https://varunbanka.github.io/
 

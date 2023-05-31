@@ -1,3 +1,5 @@
+/* LOADER STARTS HERE */
+
 #loader {
     border: 12px solid #f3f3f3;
     border-radius: 50%;
@@ -21,6 +23,8 @@
     right: 0;
     margin: auto;
 }
+
+/* LOADER ENDS HERE */
 
 
 /* Style all font awesome icons */
@@ -61,30 +65,4 @@
   .fa-github {
     background: transparent;
     color: white;
-  }
-
-
-  /* code for hyperlinks */
-  a:link {
-    color: #6366F1;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:visited {
-    color: #6366F1;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: pink;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  
-  a:active {
-    color: #6366F1;
-    background-color: transparent;
-    text-decoration: underline;
   }

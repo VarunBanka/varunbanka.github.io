@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>How to Create a Windows 10 Bootable USB Drive from Ubuntu?</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">How to Create a Windows 10 Bootable USB Drive from Ubuntu?</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Are you looking to create a bootable USB drive for installing Windows 10 on your computer, but don’t have access to a Windows machine…
+</section>
+<section data-field="body" class="e-content">
+<section name="0bad" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="a13a" id="a13a" class="graf graf--h3 graf--leading graf--title">How to Create a Windows 10 Bootable USB Drive from Ubuntu?</h3><p name="35b2" id="35b2" class="graf graf--p graf-after--h3">Are you looking to create a bootable USB drive for installing Windows 10 on your computer, but don’t have access to a Windows machine? Fortunately, you can easily create a Windows 10 bootable USB drive from Ubuntu using the WoeUSB tool. In this guide, we’ll show you how to do just that in a few simple steps.</p><p name="a8af" id="a8af" class="graf graf--p graf-after--p">Step 1: Download the Windows 10 ISO</p><p name="4609" id="4609" class="graf graf--p graf-after--p">The first step is to download the Windows 10 ISO image from Microsoft’s website. You can download it from <a href="https://www.microsoft.com/en-us/software-download/windows10ISO" data-href="https://www.microsoft.com/en-us/software-download/windows10ISO" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">this link.</a></p><p name="69b3" id="69b3" class="graf graf--p graf-after--p">Step 2: Install the WoeUSB tool</p><p name="e5c3" id="e5c3" class="graf graf--p graf-after--p">WoeUSB is a free and open-source tool that allows you to create Windows bootable USB drives from Ubuntu. To install WoeUSB, open the Terminal app by pressing <code class="markup--code markup--p-code">Ctrl + Alt + T</code> on your keyboard. Then run the following command:</p><p name="f304" id="f304" class="graf graf--p graf-after--p">sudo add-apt-repository ppa:nilarimogard/webupd8</p><p name="45ff" id="45ff" class="graf graf--p graf-after--p">This command adds the WebUpd8 PPA repository to your system, which contains the latest version of WoeUSB.</p><p name="ab6a" id="ab6a" class="graf graf--p graf-after--p">Next, update your system’s package list by running:</p><p name="1e98" id="1e98" class="graf graf--p graf-after--p">sudo apt-get update</p><p name="1577" id="1577" class="graf graf--p graf-after--p">Finally, install WoeUSB by running:</p><p name="8cd6" id="8cd6" class="graf graf--p graf-after--p">sudo apt-get install woeusb</p><p name="d58c" id="d58c" class="graf graf--p graf-after--p">Step 3: Format the USB drive</p><p name="a903" id="a903" class="graf graf--p graf-after--p">Before creating the Windows 10 bootable USB drive, you need to format the USB drive in the NTFS file system.</p><p name="bc2e" id="bc2e" class="graf graf--p graf-after--p">Note: This step will delete all data on your USB drive. Make sure you have backed up all important data before proceeding.</p><p name="6401" id="6401" class="graf graf--p graf-after--p">To format the USB drive, insert the USB drive into your computer and open the Disks app by searching for “Disks” in the Applications menu.</p><p name="768e" id="768e" class="graf graf--p graf-after--p">In the Disks app, select the USB drive from the list of disks and partitions. Then click on the gear icon and select “Format Partition”.</p><p name="afb5" id="afb5" class="graf graf--p graf-after--p">Choose “NTFS” as the file system and click “Format”. Wait for the formatting process to complete.</p><p name="14a0" id="14a0" class="graf graf--p graf-after--p">Step 4: Create the Windows 10 bootable USB drive</p><p name="db80" id="db80" class="graf graf--p graf-after--p">Once the USB drive is formatted, you can create the Windows 10 bootable USB drive using the WoeUSB tool.</p><p name="430b" id="430b" class="graf graf--p graf-after--p">Open the WoeUSB tool by searching for “WoeUSB” in the Applications menu.</p><p name="a708" id="a708" class="graf graf--p graf-after--p">In the WoeUSB tool, select the Windows 10 ISO file that you downloaded in Step 1.</p><p name="2c18" id="2c18" class="graf graf--p graf-after--p">Select the USB drive that you formatted in Step 3 as the target drive.</p><p name="108e" id="108e" class="graf graf--p graf-after--p">Click on the “Install” button to start creating the bootable USB drive.</p><p name="001f" id="001f" class="graf graf--p graf-after--p">The process may take some time depending on the speed of your USB drive and your computer. Once the process is complete, you should have a bootable USB drive with the Windows 10 installation files.</p><p name="02c9" id="02c9" class="graf graf--p graf-after--p">That’s it! You have now created a Windows 10 bootable USB drive from Ubuntu using the WoeUSB tool. You can now use this USB drive to install Windows 10 on a computer.</p><p name="191e" id="191e" class="graf graf--p graf-after--p graf--trailing">In conclusion, creating a bootable Windows 10 USB drive from Ubuntu is a straightforward process that anyone can do with the right tools and instructions. With this guide, you can easily create a Windows 10 bootable USB drive from Ubuntu and install Windows 10 on your computer without the need for a Windows machine.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@varunbanka" class="p-author h-card">Varun Banka</a> on <a href="https://medium.com/p/86ee3a38740d"><time class="dt-published" datetime="2023-04-20T07:13:10.513Z">April 20, 2023</time></a>.</p><p><a href="https://medium.com/@varunbanka/how-to-create-a-windows-10-bootable-usb-drive-from-ubuntu-86ee3a38740d" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on March 2, 2024.</p></footer></article></body></html>

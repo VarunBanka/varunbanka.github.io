@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>A Guide to Installing Arch (EndeavourOS) in Dual Boot Configuration</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">A Guide to Installing Arch (EndeavourOS) in Dual Boot Configuration</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Introduction
+</section>
+<section data-field="body" class="e-content">
+<section name="15ea" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="d39e" id="d39e" class="graf graf--h3 graf--leading graf--title">A Guide to Installing Arch (EndeavourOS) in Dual Boot Configuration</h3><h3 name="52da" id="52da" class="graf graf--h3 graf-after--h3">Introduction</h3><p name="ab0f" id="ab0f" class="graf graf--p graf-after--h3">EndeavourOS is a user-friendly Arch-based Linux distribution designed to make the Archmore accessible to a wider audience. This guide will walk you through the steps to install EndeavourOS in a dual-boot configuration alongside your existing operating system.</p><figure name="dd00" id="dd00" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*-TksgM1b13FHW5ii" data-width="750" data-height="422" src="https://cdn-images-1.medium.com/max/800/0*-TksgM1b13FHW5ii"></figure><h3 name="52e7" id="52e7" class="graf graf--h3 graf-after--figure">Let’s Dive In, Step 1: Download EndeavourOS ISO</h3><ul class="postList"><li name="55b6" id="55b6" class="graf graf--li graf-after--h3"><a href="https://endeavouros.com/#Download" data-href="https://endeavouros.com/#Download" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Visit the EndeavourOS website and download the ISO file by clicking here</a>.</li><li name="068a" id="068a" class="graf graf--li graf-after--li">Ensure that you have a stable internet connection as the ISO file is approximately 2GB in size.</li></ul><h3 name="1643" id="1643" class="graf graf--h3 graf-after--li">Step 2 — Make Bootable USB flash drive</h3><ul class="postList"><li name="5bf7" id="5bf7" class="graf graf--li graf-after--h3"><a href="https://rufus.ie/en/" data-href="https://rufus.ie/en/" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Download Rufus , a free and open-source tool for creating bootable USB drives.</a></li><li name="30cb" id="30cb" class="graf graf--li graf-after--li">Insert your USB drive into your computer. Be sure to back up any data on the drive as Rufus will format it during the process.</li><li name="f01a" id="f01a" class="graf graf--li graf-after--li">Launch rufus and click on the “Select” button next to “Boot selection” and choose the EndeavourOS ISO file you downloaded.</li></ul><figure name="de1b" id="de1b" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*4nPmqa_7co37t9TF-Erotw.png" data-width="883" data-height="844" src="https://cdn-images-1.medium.com/max/800/1*4nPmqa_7co37t9TF-Erotw.png"></figure><ul class="postList"><li name="5f69" id="5f69" class="graf graf--li graf--empty graf-after--figure"><br></li><li name="f253" id="f253" class="graf graf--li graf-after--li">Click on the “Start” button in Rufus to begin creating the bootable USB drive.</li><li name="a178" id="a178" class="graf graf--li graf-after--li">Rufus will format your USB drive and copy the ISO contents to it. Wait for the process to complete.</li></ul><h3 name="2878" id="2878" class="graf graf--h3 graf-after--li">Step 3 — Disable BitLocker</h3><p name="ae48" id="ae48" class="graf graf--p graf--startsWithDoubleQuote graf-after--h3">“BitLocker is the Windows encryption technology that protects your data from unauthorized access by encrypting your drive and requiring one or more factors of authentication before it will unlock it. Windows will require a BitLocker recovery key when it detects a possible unauthorized attempt to access the data.”</p><p name="e56a" id="e56a" class="graf graf--p graf-after--p">To disable Bitlocker on Windows 10, navigate to Start &gt; Settings &gt; Update &amp; Security &gt; Device encryption, then choose Turn Off.</p><p name="6d3e" id="6d3e" class="graf graf--p graf-after--p">For Windows 11, the method varies depending on the version. As of now, it appears that the option has been removed from both the Control Panel and the Settings app. Therefore, it’s recommended to bypass this step for now and enter the code when prompted.<a href="https://support.microsoft.com/en-us/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6" data-href="https://support.microsoft.com/en-us/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"> To locate the code, refer to the provided guide by clicking here.</a></p><h3 name="ad01" id="ad01" class="graf graf--h3 graf-after--p">Step 4 — Disable Secure Boot</h3><p name="0680" id="0680" class="graf graf--p graf--startsWithDoubleQuote graf-after--h3">“Secure Boot is an important security feature designed to prevent malicious software from loading when your PC starts up (boots).” However in order to install Linux, we will need to disable it.</p><p name="af4c" id="af4c" class="graf graf--p graf-after--p">To do so, Power off your PC, then power it back on. Immediately start pressing the BIOS key, which varies depending on your motherboard or laptop brand (try doing a google search to find out yours). </p><figure name="2e1e" id="2e1e" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*nimkzfkOjdGRlLNs.png" data-width="788" data-height="829" src="https://cdn-images-1.medium.com/max/800/0*nimkzfkOjdGRlLNs.png"></figure><p name="6898" id="6898" class="graf graf--p graf-after--figure">Image source:<a href="https://www.reddit.com/r/computertechs/comments/5cmbrq/bios_boot_keys_for_most_pc_brands/" data-href="https://www.reddit.com/r/computertechs/comments/5cmbrq/bios_boot_keys_for_most_pc_brands/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"> Click here</a></p><p name="25ac" id="25ac" class="graf graf--p graf-after--p">Once in the BIOS settings, navigate to the Security tab using the arrow keys. Locate the Secure Boot option and press Enter to select it. Choose to disable Secure Boot. This step is necessary because Secure Boot restricts the boot process to signed operating systems only. After disabling Secure Boot, navigate to the Exit tab, select ‘Save and Exit’ to apply the changes.</p><p name="f099" id="f099" class="graf graf--p graf--empty graf-after--p graf--trailing"><br></p></div></div></section>
+</section>
+<footer><p><a href="https://medium.com/p/a397a2ce5e5e">View original.</a></p><p>Exported from <a href="https://medium.com">Medium</a> on March 2, 2024.</p></footer></article></body></html>

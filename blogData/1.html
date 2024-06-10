@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Flashing TWRP on Samsung devices | By Varun Banka</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Flashing TWRP on Samsung devices | By Varun Banka</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Flashing TWRP (Team Win Recovery Project) on a Samsung device using Odin is a fairly simple process that can be done by anyone with basic…
+</section>
+<section data-field="body" class="e-content">
+<section name="177a" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="849a" id="849a" class="graf graf--h3 graf--leading graf--title">Flashing TWRP on Samsung devices | By Varun Banka</h3><p name="6c45" id="6c45" class="graf graf--p graf-after--h3">Flashing TWRP (Team Win Recovery Project) on a Samsung device using Odin is a fairly simple process that can be done by anyone with basic technical knowledge. TWRP is an open-source custom recovery that provides users with a wide range of features and functionalities, including rooting, backing up, and installing custom ROMs. In this guide, we’ll walk you through the process of flashing TWRP on a Samsung device using Odin.</p><p name="20d9" id="20d9" class="graf graf--p graf-after--p">Before we start, here’s what you’ll need:</p><ol class="postList"><li name="25dd" id="25dd" class="graf graf--li graf-after--p">A Windows computer</li><li name="f21e" id="f21e" class="graf graf--li graf-after--li">A Samsung device that supports TWRP</li><li name="734a" id="734a" class="graf graf--li graf-after--li">A USB cable to connect your device to the computer</li><li name="d0a7" id="d0a7" class="graf graf--li graf-after--li">The latest version of Odin (you can download it from the official Samsung website)</li><li name="1f87" id="1f87" class="graf graf--li graf-after--li">The TWRP recovery image for your device</li></ol><p name="c0a1" id="c0a1" class="graf graf--p graf-after--li">Step 1: Bootloader Unlocking</p><p name="8b60" id="8b60" class="graf graf--p graf-after--p">Before you can flash TWRP on your Samsung device, you need to enable USB debugging and OEM unlocking. Here’s how to do it:</p><p name="4acf" id="4acf" class="graf graf--p graf-after--p"><a href="https://medium.com/@varunbanka/unlocking-bootloader-on-samsung-phones-6dfc73d95c85" data-href="https://medium.com/@varunbanka/unlocking-bootloader-on-samsung-phones-6dfc73d95c85" class="markup--anchor markup--p-anchor" target="_blank">Refer to this page</a></p><p name="5199" id="5199" class="graf graf--p graf-after--p">Step 2: Install the Samsung USB Drivers</p><p name="ce1b" id="ce1b" class="graf graf--p graf-after--p">Before you connect your Samsung device to the computer, make sure that you have the latest Samsung USB drivers installed on your computer. You can download the drivers from the official Samsung website.</p><p name="c381" id="c381" class="graf graf--p graf-after--p">Step 3: Extract the Odin File</p><p name="25a0" id="25a0" class="graf graf--p graf-after--p">Once you have the Odin file downloaded, extract it to your computer. You can extract the file using WinRAR or 7zip or any other archive manager software.</p><figure name="1a27" id="1a27" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*PZw-17ygJoPXJvDs.jpg" data-width="947" data-height="710" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*PZw-17ygJoPXJvDs.jpg"></figure><p name="af4d" id="af4d" class="graf graf--p graf-after--figure">Step 4: Boot Your Samsung Device into Download Mode</p><p name="d30d" id="d30d" class="graf graf--p graf-after--p">To flash TWRP using Odin, you need to boot your Samsung device into download mode. Here’s how to do it:</p><ul class="postList"><li name="3835" id="3835" class="graf graf--li graf-after--p">Turn off your device</li><li name="918b" id="918b" class="graf graf--li graf-after--li">Press and hold the Volume Down, Home, and Power buttons at the same time</li><li name="a6b9" id="a6b9" class="graf graf--li graf-after--li">When the Samsung logo appears, release the Power button and keep holding the Volume Down and Home buttons</li><li name="cb84" id="cb84" class="graf graf--li graf-after--li">You should now see a warning screen, press the Volume Up button to enter download mode</li></ul><figure name="d161" id="d161" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="0*ByhJfk7GVm_48Ukf.png" data-width="400" data-height="272" src="https://cdn-images-1.medium.com/max/800/0*ByhJfk7GVm_48Ukf.png"></figure><p name="acd5" id="acd5" class="graf graf--p graf-after--figure">Step 5: Connect Your Device to the Computer</p><p name="702e" id="702e" class="graf graf--p graf-after--p">Once your device is in download mode, connect it to the computer using a USB cable.</p><p name="0d46" id="0d46" class="graf graf--p graf-after--p">Step 6: Launch Odin</p><p name="94ad" id="94ad" class="graf graf--p graf-after--p">Open the Odin file that you extracted in Step 3 and launch the application.</p><figure name="9f96" id="9f96" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*HBIkiWAnZTBrdOosrEMQog.png" data-width="1307" data-height="941" src="https://cdn-images-1.medium.com/max/800/1*HBIkiWAnZTBrdOosrEMQog.png"></figure><p name="5f2d" id="5f2d" class="graf graf--p graf-after--figure">Step 7: Load the TWRP Recovery Image</p><p name="525d" id="525d" class="graf graf--p graf-after--p">In Odin, click on the “AP” button and select the TWRP recovery image for your device.</p><figure name="8130" id="8130" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*50PGPx8ZISltYHgETwI37Q.png" data-width="1920" data-height="1080" src="https://cdn-images-1.medium.com/max/800/1*50PGPx8ZISltYHgETwI37Q.png"></figure><p name="f05f" id="f05f" class="graf graf--p graf-after--figure">Step 8: Start the Flashing Process</p><p name="814f" id="814f" class="graf graf--p graf-after--p">Once you have loaded the TWRP recovery image, click on the “Start” button to start the flashing process.</p><p name="07d2" id="07d2" class="graf graf--p graf-after--p">Step 9: Wait for the Flashing Process to Complete</p><p name="10dd" id="10dd" class="graf graf--p graf-after--p">The flashing process may take several minutes to complete, so be patient. Once the process is complete, your device will automatically restart.</p><p name="b511" id="b511" class="graf graf--p graf-after--p">Step 10: Boot into TWRP</p><p name="7833" id="7833" class="graf graf--p graf-after--p">To boot into TWRP, turn off your device and then press and hold the Volume Up, Home, and Power buttons at the same time. Keep holding the buttons until the TWRP splash screen appears.</p><figure name="e378" id="e378" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*KuMDPRVtXMEuiQOd.png" data-width="220" data-height="469" src="https://cdn-images-1.medium.com/max/800/0*KuMDPRVtXMEuiQOd.png"></figure><p name="3d1c" id="3d1c" class="graf graf--p graf-after--figure">Congratulations, you have successfully flashed TWRP on your Samsung device using Odin. From here, you can now root your device, install custom ROMs, and enjoy the full benefits of TWRP.</p><p name="12da" id="12da" class="graf graf--p graf-after--p graf--trailing">In conclusion, flashing TWRP on a Samsung device using Odin is a simple process that allows users to take advantage of the many features and functionalities offered by TWRP. However, it’s important to note that flashing TWRP or any custom recovery may cause unintended consequences, such as boot loops. If you find yourself facing a boot loop, the best course of action is to flash the stock ROM to restore your device to its original state. Keep in mind that the author of this guide is not responsible for any damage that may occur during the flashing process. If you need further help, you can reach out to the author by dropping an email at <a href="mailto:bankavarun18@Gmail.com" data-href="mailto:bankavarun18@Gmail.com" class="markup--anchor markup--p-anchor" target="_blank">bankavarun18@gmail.com</a>.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@varunbanka" class="p-author h-card">Varun Banka</a> on <a href="https://medium.com/p/6a4c86d7de69"><time class="dt-published" datetime="2023-02-11T10:04:52.073Z">February 11, 2023</time></a>.</p><p><a href="https://medium.com/@varunbanka/flashing-twrp-on-samsung-devices-6a4c86d7de69" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on March 2, 2024.</p></footer></article></body></html>

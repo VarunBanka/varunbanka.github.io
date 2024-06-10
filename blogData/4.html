@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Safely Removing Linux from Windows Dual Boot</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Safely Removing Linux from Windows Dual Boot</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Dual Boot Detox: Uninstalling Linux from Windows Without Breaking a Sweat
+</section>
+<section data-field="body" class="e-content">
+<section name="3b08" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="8774" id="8774" class="graf graf--h3 graf--leading graf--title">Safely Removing Linux from Windows Dual Boot</h3><h3 name="fc35" id="fc35" class="graf graf--h3 graf-after--h3">Introduction</h3><p name="ec8c" id="ec8c" class="graf graf--p graf-after--h3">Many users opt for a dual-boot setup, running both Windows and Linux on their machines. However, there may come a time when you decide to remove Linux from your system while keeping Windows intact. This process requires careful attention to avoid accidentally damaging your system. In this guide, we’ll walk through the steps to safely remove Linux from a Windows dual-boot configuration.</p><h3 name="8f9a" id="8f9a" class="graf graf--h3 graf-after--p">1. Deleting Linux Partition on Windows:</h3><h4 name="1a18" id="1a18" class="graf graf--h4 graf-after--h3">1.1. Access Disk Management:</h4><p name="e072" id="e072" class="graf graf--p graf-after--h4">Press `Win + R` to open the Run dialog, type `diskmgmt.msc`, and hit Enter to open Disk Management.</p><figure name="8ac7" id="8ac7" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*GQowzmbdDNsJ-jP8PhFHKw.png" data-width="715" data-height="414" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*GQowzmbdDNsJ-jP8PhFHKw.png"></figure><h4 name="a7f2" id="a7f2" class="graf graf--h4 graf-after--figure">1.2. Identify Linux Partition:</h4><p name="4a6a" id="4a6a" class="graf graf--p graf-after--h4">In Disk Management, look for the Linux partition, usually displayed without a drive letter. Right-click on it and select “Delete Volume.”</p><figure name="3f6f" id="3f6f" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*sLGKG_izUA96sET-Ckxsqw.png" data-width="1919" data-height="1079" src="https://cdn-images-1.medium.com/max/800/1*sLGKG_izUA96sET-Ckxsqw.png"></figure><h4 name="ec6f" id="ec6f" class="graf graf--h4 graf-after--figure">1.3. Delete Partition:</h4><p name="ea6b" id="ea6b" class="graf graf--p graf-after--h4">Confirm the action to delete the Linux partition. This step removes the Linux operating system files from your system.</p><figure name="7521" id="7521" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*BfhLBvd93USlNsnZT4ic3A.png" data-width="572" data-height="266" src="https://cdn-images-1.medium.com/max/800/1*BfhLBvd93USlNsnZT4ic3A.png"></figure><h3 name="0527" id="0527" class="graf graf--h3 graf-after--figure">2. Remove Boot Entry from System Partition</h3><h4 name="7ac0" id="7ac0" class="graf graf--h4 graf-after--h3">2.1 Open Windows PowerShell as Admin:</h4><p name="efcd" id="efcd" class="graf graf--p graf-after--h4">Right-click on the Start menu, select “Windows PowerShell (Admin)” to open PowerShell with administrative privileges.</p><figure name="9caa" id="9caa" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*M3E0ZQhkGSvfeaOULvbwqA.png" data-width="1250" data-height="1079" src="https://cdn-images-1.medium.com/max/800/1*M3E0ZQhkGSvfeaOULvbwqA.png"></figure><h4 name="9855" id="9855" class="graf graf--h4 graf-after--figure">2.2 Run Diskpart Commands:</h4><p name="4a3b" id="4a3b" class="graf graf--p graf-after--h4">Now run the following commands one by one:</p><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="bash" name="22c3" id="22c3" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><br />diskpart</span></pre><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="bash" name="177a" id="177a" class="graf graf--pre graf-after--pre graf--preV2"><span class="pre--content"><br />list disk</span></pre><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="bash" name="792b" id="792b" class="graf graf--pre graf-after--pre graf--preV2"><span class="pre--content"><br /><span class="hljs-keyword">select</span> disk 0</span></pre><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="bash" name="524b" id="524b" class="graf graf--pre graf-after--pre graf--preV2"><span class="pre--content"><br />list partition</span></pre><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="bash" name="867f" id="867f" class="graf graf--pre graf-after--pre graf--preV2"><span class="pre--content"><span class="hljs-keyword">select</span> partition 1</span></pre><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="bash" name="84bd" id="84bd" class="graf graf--pre graf-after--pre graf--preV2"><span class="pre--content">assign letter=x<br /><br /></span></pre><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="shell" name="b457" id="b457" class="graf graf--pre graf-after--pre graf--preV2"><span class="pre--content">exit<br /><br /></span></pre><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="bash" name="3aea" id="3aea" class="graf graf--pre graf-after--pre graf--preV2"><span class="pre--content">x: <br /><br /></span></pre><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="bash" name="20ae" id="20ae" class="graf graf--pre graf-after--pre graf--preV2"><span class="pre--content"><span class="hljs-built_in">dir</span><br /><br /></span></pre><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="bash" name="9a20" id="9a20" class="graf graf--pre graf-after--pre graf--preV2"><span class="pre--content"><span class="hljs-built_in">cd</span> efi<br /><br /></span></pre><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="bash" name="d46c" id="d46c" class="graf graf--pre graf-after--pre graf--preV2"><span class="pre--content"><span class="hljs-built_in">dir</span></span></pre><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="bash" name="59aa" id="59aa" class="graf graf--pre graf-after--pre graf--preV2"><span class="pre--content">rd fedora /S (Replace “fedora” with your Linux distribution’s directory name)</span></pre><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="bash" name="39c1" id="39c1" class="graf graf--pre graf-after--pre graf--preV2"><span class="pre--content">y</span></pre><h4 name="a380" id="a380" class="graf graf--h4 graf-after--pre">2.3 Conclusion:</h4><p name="3f49" id="3f49" class="graf graf--p graf-after--h4">Removing Linux from a Windows dual-boot setup involves deleting the Linux partition and removing its boot entry from the system partition. By following these steps carefully, you can safely remove Linux while preserving your Windows installation. Remember to back up important data before making any changes to your system’s disk partitions. With this guide, you can confidently manage your dual-boot configuration and tailor your system to your needs.</p><p name="a9b0" id="a9b0" class="graf graf--p graf-after--p graf--trailing">Removing an operating system from a dual-boot setup requires caution and attention to detail. By following these steps carefully, you can safely remove Linux from your Windows dual-boot configuration without affecting your Windows installation. Remember to back up any important data before making changes to your system’s partitions, and proceed with caution to avoid unintended consequences.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@varunbanka" class="p-author h-card">Varun Banka</a> on <a href="https://medium.com/p/3574f10c1b10"><time class="dt-published" datetime="2024-02-02T12:01:45.670Z">February 2, 2024</time></a>.</p><p><a href="https://medium.com/@varunbanka/safely-removing-linux-from-windows-dual-boot-3574f10c1b10" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on March 2, 2024.</p></footer></article></body></html>
